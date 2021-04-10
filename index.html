@@ -17,7 +17,7 @@ body
     font-size: 30px;
 	background-color:#1a1a1a;
 
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 0.2px black;
     -webkit-text-fill-color: white;
 }
 
@@ -27,6 +27,39 @@ body
 	text-align: center;
     
 }
+input:focus
+{
+	background-color: #4c6170;
+	border-color: red;
+}
+.form
+{  
+	width:280px;
+	border-radius: 6px;
+	border-style: solid;
+	border-color: #9f181b;
+	background-color:rgba(255,0,0,0.2);
+	font-size: 16px;
+	padding: 6px 10px;
+}
+
+.button 
+{
+	border-radius: 3px;
+	border-style: solid;
+	border-color: #870000;
+	background-color:#ba0000;
+	color: white;
+	padding: 10px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 1px 1px;
+	cursor: pointer;
+}
+
+
 </style>
 </head>
 <body>
@@ -36,9 +69,11 @@ body
 			<form action="mailto:teethbreakear@gmail.com" method="post" enctype="text/plain">
 			TO KEEP UPDATED FOR MY PROJECTS:<br>
          
-					<input type="text" name="mail" placeholder="Your email for update news ">
+					<input type="text" class="form"name="mail" placeholder="Put here your email for update news ">
            	
-            		<input type="submit" value="Send">
+            		<input type="submit" class="button" value="Send">
+                    
+				
            
 			</form>
 		
